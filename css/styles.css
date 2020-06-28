@@ -474,7 +474,7 @@ a.active {
 }
 
 .navbar-brand.page-scroll {
-    img letter-spacing: 3px;
+     letter-spacing: 3px;
     font-size: 22px;
 }
 
@@ -841,6 +841,7 @@ a.fa.fa-angle-down:focus {
 
 .skills {
     margin: 30px;
+    margin-left: 5px;
     float: left;
 }
 
