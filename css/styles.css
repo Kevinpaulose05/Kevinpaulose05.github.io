@@ -498,8 +498,11 @@ a.active {
 
 /* ======= INTRODUCTION ======= */
 
-
 #intro {
+    height: 700px;
+}
+
+#intro .overlay {
 
     height: 750px;
     background-attachment: fixed;
@@ -554,7 +557,7 @@ a.fa.fa-angle-down {
     padding: 10px 14px;
     color: #aaa;
     font-size: 50px;
-    margin-top: 125px;
+    margin-top: 55px;
     transition: all 0.5s;
 }
 
@@ -578,7 +581,7 @@ a.fa.fa-angle-down:focus {
 /* ======= ABOUT ======= */
 
 #about {
-    padding-top: 90px;
+    padding-top: 55px;
     padding-bottom: 100px;
     background-color: #f5f5f5;
 }
