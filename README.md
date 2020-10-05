@@ -1,4 +1,4 @@
-[VISIT MY SITE](https://kevinpaulose05.github.io/V1-personal_website)
+[VISIT MY SITE](https://kevinpaulose05.github.io/)
 
 Pardon my content on the page. I am currently improvising on the content and also expanding my website.
 
