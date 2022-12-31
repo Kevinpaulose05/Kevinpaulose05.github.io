@@ -1175,9 +1175,9 @@ a.fa.fa-angle-down:focus {
 }
 
 .skills-section .skill-icon img {
-    margin: 0 auto;
-    width: 75px;
-    height: auto;
+    margin: auto;
+    width: auto;
+    height: 75px;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     -webkit-transition: all .3s ease-in-out;
