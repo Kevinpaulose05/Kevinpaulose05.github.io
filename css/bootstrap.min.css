@@ -1437,9 +1437,9 @@ img {
 .img-responsive,
 .thumbnail a>img,
 .thumbnail>img {
-    display: block;
+    display: circle;
     max-width: 100%;
-    height: auto
+    height: 100px;
 }
 
 .img-rounded {
