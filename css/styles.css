@@ -499,7 +499,7 @@ a.active {
 /* ======= INTRODUCTION ======= */
 
 #intro {
-    height: 700px;
+    height: 900px;
 }
 
 #intro .overlay {
@@ -521,7 +521,7 @@ a.active {
 
 .intro-content {
     position: absolute;
-    padding: 20% 0 5% 0;
+    padding: 20% 0 15% 0;
     left: 0;
     right: 0;
     z-index: 0;
