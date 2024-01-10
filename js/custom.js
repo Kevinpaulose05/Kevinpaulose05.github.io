@@ -6,6 +6,31 @@ $(function() {
 		offset: '75%'
 	});
 
+	/*** Portfolio details slider*/
+	new Swiper('.portfolio-details-slider', {
+		speed: 400,
+		loop: true,
+		autoplay: {
+		  delay: 5000,
+		  disableOnInteraction: false
+		},
+		pagination: {
+		  el: '.swiper-pagination',
+		  type: 'bullets',
+		  clickable: true
+		},
+		// Navigation arrows
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		  },
+		
+		  // And if we need scrollbar
+		  scrollbar: {
+			el: '.swiper-scrollbar',
+		  },
+	  });
+
 	/* Features */
 	$('.wp2').waypoint(function() {
 		$('.wp2').addClass('animated fadeIn');
@@ -85,4 +110,29 @@ $(function() {
         $("#to-top-copy").animate({opacity: "0"}, "slow");
     });
 
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Add click event listener to open image when a slide is clicked
+    swiper.on('click', function () {
+        // Get the active slide index
+        var activeIndex = swiper.activeIndex;
+        
+        // Get the corresponding slide element
+        var activeSlide = swiper.slides[activeIndex];
+
+        // Get the image source from the active slide
+        var imageUrl = activeSlide.querySelector('img').src;
+
+        // Open the image (replace this with your preferred method)
+        openImageModal(imageUrl);
+    });
+
+    function openImageModal(imageUrl) {
+        // Implement your logic to open the image modal or perform any desired action
+        console.log('Open image modal for: ' + imageUrl);
+        // Example: You can use a lightbox library or your custom modal implementation
+        // For simplicity, we are logging the image URL to the console.
+    }
 });

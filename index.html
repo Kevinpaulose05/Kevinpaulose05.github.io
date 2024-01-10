@@ -37,7 +37,9 @@
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
 
-
+    <!---Swiper--->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom" data-offset="100">
@@ -179,7 +181,8 @@
                             <div class="icon"><i class="fas fa-jedi"></i></div>
                             <h3>My other half</h3>
                             <p>I have varied non-technical activities a.k.a. hobbies that I love to do. Check out a
-                                small collage of <a href='img/experience/collage.jpg'>ME</a>. For starters swimming, novels, music are
+                                small collage of <a href='img/experience/collage.jpg'>ME</a>. For starters swimming,
+                                novels, music are
                                 just some of it.</p>
                         </div>
                     </div>
@@ -362,14 +365,26 @@
                     Dive in and discover the highlights of my work!</h5>
             </div>
             <div class="portfolio-item-wrapper">
-                <div class="portfolio-item" data-toggle="modal" href="#adaptivecontrol">
+                <div class="portfolio-item" data-toggle="modal" href="#gta">
                     <div class="portfolio-overlay"></div>
                     <div class="links">
                         <a class="image-link"><i class="fa fa-search-plus"></i></a>
                     </div>
-                    <img src="img/portfolio/adaptive.png" alt="image">
+                    <img src="img/portfolio/gta/gta.png" alt="image">
                     <div class="portfolio-info">
-                        <h3>Adaptive control and guidance of UAVs/aircrafts</h3>
+                        <h3>Grand Theft Autonoumous (GTA)</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-item" data-toggle="modal" href="#pickandplace">
+                    <div class="portfolio-overlay"></div>
+                    <div class="links">
+                        <a class="image-link"><i class="fa fa-search-plus"></i></a>
+                    </div>
+                    <img src="img/portfolio/pickplace/pickandplace.png" alt="image">
+                    <div class="portfolio-info">
+                        <h3>Pick and Place Competition</h3>
                     </div>
                 </div>
             </div>
@@ -382,6 +397,18 @@
                     <img src="img/portfolio/drone.jpg" alt="image">
                     <div class="portfolio-info">
                         <h3>OBSTACLE AVOIDANCE ALGORITHMS</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-item" data-toggle="modal" href="#adaptivecontrol">
+                    <div class="portfolio-overlay"></div>
+                    <div class="links">
+                        <a class="image-link"><i class="fa fa-search-plus"></i></a>
+                    </div>
+                    <img src="img/portfolio/adaptive.png" alt="image">
+                    <div class="portfolio-info">
+                        <h3>Adaptive control and guidance of UAVs/aircrafts</h3>
                     </div>
                 </div>
             </div>
@@ -439,6 +466,195 @@
     <!--************************** PORTFOLIO MODALS **************************-->
     <!-- Feedback Loop MODAL -->
 
+    <div class="modal fade" id="gta" tabindex="-1" role="dialog" aria-labelledby="fontipsumsModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Grand Theft Autonomous 2023</h4>
+                    <h6 class="modal-title-description">MEAM 5100 Course Final Project- Mobile Robot Competition</h6>
+                </div>
+                <div class="modal-body">
+                    <!-- <p>
+                        <img class="img-responsive img-centered" src="img/portfolio/drone.jpg" alt="">
+                    </p>               -->
+                    <div class="portfolio-details">
+                        <div class="portfolio-details-slider swiper">
+                            <div class="swiper-wrapper align-items-center">
+                                <div class="swiper-slide">
+                                    <img src="/img/portfolio/gta/wall_following.gif" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/img/portfolio/gta/beacon.gif" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/img/portfolio/gta/police_car.gif" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/img/portfolio/gta/label.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <p class="modal-description">
+                        Presenting an innovative autonomous 4-wheeled mobile robot that seamlessly integrates mechanical
+                        design, electronic engineering, and sophisticated embedded software. This robot is primarily
+                        capabable of precise wall following, beacon tracking, and pushing a model police car (a heavy
+                        target placed randomly on the track). The fundamental distinguishing component used are the
+                        mecanum wheels which provides omnidirectional motion to the robot!
+                    </p>
+                    <br>
+
+                    <p class=" modal-description li">
+                    The brains of the robot is the ESP32 S2 microcontroller, which works as the access point
+                    facilitating real-time data processing crucial for managing interactions and executing tasks.
+                    The robot employs three crucial circuits:
+                    <ul>
+                        <li>frequency detection circuit which uses LTR-4208 phototransistors to detect IR LEDs (beacon),
+                            signals processed using ATMega32u4</li>
+                        <li>HTC Vive circuit which uses PD-70 photodiode to read and transmit robot's position, used for
+                            robot localisation PID algorithm</li>
+                        <li>ultrasonic sensors and motor drivers (TB6612FNG) circuits used to drive the robot</li>
+                    </ul>
+                    </p>
+                    <p class="modal-description">
+                    The software architecture plays a pivotal role in the robot's functionality, incorporating a
+                    real-time operating system (RTOS) to efficiently handle concurrent tasks, ensuring seamless and
+                    responsive operation. The system employs interrupt handling for immediate response to sensor
+                    inputs, I2C communication for streamlined data transfer between sensors and the microcontroller,
+                    and UDP, ESP-NOW protocols for robust network communication.
+                    </p>
+                    <br>
+                    <p class="modal-description"><strong>Note:</strong> For an optimal experience, use browsers on
+                        laptop/PC</p>
+                    <p class="visit"><a href="https://github.com/Kevinpaulose05/Grand-Theft-Autonomous-2023"
+                            target="_blank" id="visit-btn">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="pickandplace" tabindex="-1" role="dialog" aria-labelledby="fontipsumsModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Pick and Place Competition</h4>
+                    <h6 class="modal-title-description">MEAM 5200 Course Final Project</h6>
+                </div>
+                <div class="modal-body">
+                    <!-- <p>
+                        <img class="img-responsive img-centered" src="img/portfolio/drone.jpg" alt="">
+                    </p>               -->
+                    <div class="portfolio-details">
+                        <div class="portfolio-details-slider swiper">
+                            <div class="swiper-wrapper align-items-center">
+                                <div class="swiper-slide">
+                                    <img src="/img/portfolio/pickplace/competition.gif" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/img/portfolio/pickplace/lab.gif" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/img/portfolio/pickplace/simulation.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/img/portfolio/pickplace/map4.gif" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <p class="modal-description">
+                        Presenting an innovative autonomous 4-wheeled mobile robot that seamlessly integrates mechanical
+                        design, electronic engineering, and sophisticated embedded software. This robot is primarily
+                        capabable of precise wall following, beacon tracking, and pushing a model police car (a heavy
+                        target placed randomly on the track). The fundamental distinguishing component used are the
+                        mecanum wheels which provides omnidirectional motion to the robot!
+                    </p>
+                    <br>
+
+                    <p class=" modal-description li">
+                    The brains of the robot is the ESP32 S2 microcontroller, which works as the access point
+                    facilitating real-time data processing crucial for managing interactions and executing tasks.
+                    The robot employs three crucial circuits:
+                    <ul>
+                        <li>frequency detection circuit which uses LTR-4208 phototransistors to detect IR LEDs (beacon),
+                            signals processed using ATMega32u4</li>
+                        <li>HTC Vive circuit which uses PD-70 photodiode to read and transmit robot's position, used for
+                            robot localisation PID algorithm</li>
+                        <li>ultrasonic sensors and motor drivers (TB6612FNG) circuits used to drive the robot</li>
+                    </ul>
+                    </p>
+                    <p class="modal-description">
+                    The software architecture plays a pivotal role in the robot's functionality, incorporating a
+                    real-time operating system (RTOS) to efficiently handle concurrent tasks, ensuring seamless and
+                    responsive operation. The system employs interrupt handling for immediate response to sensor
+                    inputs, I2C communication for streamlined data transfer between sensors and the microcontroller,
+                    and UDP, ESP-NOW protocols for robust network communication.
+                    </p>
+                    <br>
+                    <p class="modal-description"><strong>Note:</strong> For an optimal experience, use browsers on
+                        laptop/PC</p>
+                    <p class="visit"><a href="https://github.com/Kevinpaulose05/Grand-Theft-Autonomous-2023"
+                            target="_blank" id="visit-btn">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="drone" tabindex="-1" role="dialog" aria-labelledby="fontipsumsModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">OBSTACLE AVOIDANCE ALGORITHMS FOR UNMANNED AERIAL VEHICLES</h4>
+                    <h6 class="modal-title-description">(Under Dr. Soulaimane Berkane, UQO, Canada)</h6>
+                </div>
+                <div class="modal-body">
+                    <!-- <p>
+                        <img class="img-responsive img-centered" src="img/portfolio/drone.jpg" alt="">
+                    </p>               -->
+                    <div class="portfolio-details">
+                        <div class="portfolio-details-slider swiper">
+                            <div class="swiper-wrapper align-items-center">
+                                <div class="swiper-slide">
+                                    <img src="/img/portfolio/drone.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/img/portfolio/adaptive.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/img/portfolio/adaptive.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <p class="modal-description">Developed effective obstacle avoidances algorithm for an autonomous 6 -
+                        DOF quadcopterdrone in an
+                        unknown environment using the concept of Nagumo's invariance theorem, viz., using safety
+                        velocitycones (Bouligand
+                        tangent cones). Then tested the newly developed deadlocks - free hybrid approaches on a fully
+                        customized small (2 - 25kg weight)
+                        dronemodel- Holybro X500 V2</p>
+                    <Br>
+                    <p class="modal-description"><strong>Note:</strong> For an optimal experience, use browsers on
+                        laptop/PC</p>
+                    <p class="visit"><a href="https://drive.google.com/file/d/1oRdXhwlaf4fUCGxLEynZNDhZY5-IaFLU/view"
+                            target="_blank" id="visit-btn">View report</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="modal fade" id="adaptivecontrol" tabindex="-1" role="dialog" aria-labelledby="fontipsumsModal"
         aria-hidden="true">
         <div class="modal-dialog">
@@ -461,35 +677,6 @@
                     <p class="modal-description"><strong>Note:</strong> For an optimal experience, use browsers on
                         laptop/PC</p>
                     <p class="visit"><a href="https://drive.google.com/file/d/1k4krRCNwOa0mCSQsRRGBg34Bcyf-DiuM/view"
-                            target="_blank" id="visit-btn">View report</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="drone" tabindex="-1" role="dialog" aria-labelledby="fontipsumsModal" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">OBSTACLE AVOIDANCE ALGORITHMS FOR UNMANNED AERIAL VEHICLES</h4>
-                    <h6 class="modal-title-description">(Under Dr. Soulaimane Berkane, UQO, Canada)</h6>
-                </div>
-                <div class="modal-body">
-                    <p>
-                        <img class="img-responsive img-centered" src="img/portfolio/drone.jpg" alt="">
-                    </p>
-                    <p class="modal-description">Developed effective obstacle avoidances algorithm for an autonomous 6 -
-                        DOF quadcopterdrone in an
-                        unknown environment using the concept of Nagumo's invariance theorem, viz., using safety
-                        velocitycones (Bouligand
-                        tangent cones). Then tested the newly developed deadlocks - free hybrid approaches on a fully
-                        customized small (2 - 25kg weight)
-                        dronemodel- Holybro X500 V2</p>
-                    <Br>
-                    <p class="modal-description"><strong>Note:</strong> For an optimal experience, use browsers on
-                        laptop/PC</p>
-                    <p class="visit"><a href="https://drive.google.com/file/d/1oRdXhwlaf4fUCGxLEynZNDhZY5-IaFLU/view"
                             target="_blank" id="visit-btn">View report</a>
                 </div>
             </div>
@@ -658,17 +845,17 @@
                         <li><a id="twitter" href="https://twitter.com/KevinPaulose" target="_blank"><i
                                     class="fa fa-twitter"></i></a></li>
                         <!-- YouTube Button -->
-                        <li><a id="youtube" href="https://www.youtube.com/@kevinpaulose8004/videos"
-                            target="_blank"><i class="fab fa-youtube"></i></a></li>
+                        <li><a id="youtube" href="https://www.youtube.com/@kevinpaulose8004/videos" target="_blank"><i
+                                    class="fab fa-youtube"></i></a></li>
                         <!-- Instagram Button -->
                         <li><a id="instagram" href="https://www.instagram.com/kevinpaulose05/" target="_blank"><i
-                            class="fab fa-instagram"></i></a></li>
+                                    class="fab fa-instagram"></i></a></li>
                         <!-- Facebook Button -->
                         <li><a id="facebook" href="https://www.facebook.com/kevin.paulose.5/" target="_blank"><i
                                     class="fa fa-facebook"></i></a></li>
                         <!-- Steam Button -->
                         <li><a id="steam" href="https://steamcommunity.com/profiles/76561198985552516/"
-                            target="_blank"><i class="fab fa-steam"></i></a></li>
+                                target="_blank"><i class="fab fa-steam"></i></a></li>
                     </ul>
                     <div class="page-scroll">
                         <a id="to-top" class="page-scroll" href="#page-top">
@@ -678,7 +865,8 @@
                     </div>
                     <div class="copyright">
                         <p><i class="fa fa-copyright"></i> Kevin Paulose 2023</p>
-                        <p>Hosted by <a href src="https://pages.github.com/" style="color: rgb(94, 159, 211);">GitHub Pages</a>. Last updated: January 10, 2024</p>
+                        <p>Hosted by <a href src="https://pages.github.com/" style="color: rgb(94, 159, 211);">GitHub
+                                Pages</a>. Last updated: January 10, 2024</p>
                     </div>
                 </div>
             </div>
