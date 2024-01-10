@@ -474,7 +474,7 @@ a.active {
 }
 
 .navbar-brand.page-scroll {
-     letter-spacing: 3px;
+    letter-spacing: 3px;
     font-size: 22px;
 }
 
@@ -520,8 +520,8 @@ a.active {
 }
 
 .intro-content {
-    position: absolute;
-    padding: 20% 0 15% 0;
+    position: relative;
+    padding: 15% 0 15% 0;
     left: 0;
     right: 0;
     z-index: 0;
@@ -581,14 +581,16 @@ a.fa.fa-angle-down:focus {
 /* ======= ABOUT ======= */
 
 #about {
-    padding-top: 55px;
+    padding-top: 85px;
     padding-bottom: 100px;
     background-color: #f5f5f5;
 }
 
 #about img#prof-pic {
-    width: 170px;
-    height: auto;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: 10% 10%;
 }
 
 #about p {
@@ -609,7 +611,7 @@ a.fa.fa-angle-down:focus {
     background: #f0f0f0;
     color: #555;
     text-align: center;
-    margin: 0px auto;
+    margin: -20px auto;
     padding: 20px;
     height: 200px;
     width: 50%;
@@ -752,8 +754,8 @@ a.fa.fa-angle-down:focus {
 /* ======= SERVICES ======= */
 
 #services {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     background-color: #F0F0F0;
 }
 
@@ -1145,13 +1147,14 @@ a.fa.fa-angle-down:focus {
     }
 }
 
-.skills-section {}
+/* .skills-section {} */
 
 .skills-section h3 {
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 20px;
     margin: 0 0 50px;
     line-height: 1.5;
+    text-transform: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -1361,8 +1364,8 @@ a.resume-btn:active {
 /* ======= PORTFOLIO ======= */
 
 #portfolio {
-    padding-top: 90px;
-    padding-bottom: 100px;
+    padding-top: 80px;
+    padding-bottom: 70px;
     background: #fff;
 }
 
@@ -1389,7 +1392,7 @@ a.resume-btn:active {
 
 #portfolio .coming-soon {
     margin-bottom: 50px;
-    text-transform: lowercase;
+    text-transform: none;
 }
 
 #portfolio .portfolio-item-wrapper {
@@ -1397,7 +1400,7 @@ a.resume-btn:active {
     display: inline-block;
     padding: 0 0 5px;
     margin: 0 1% 30px;
-    vertical-align: top;
+    vertical-align: middle;
 }
 
 @media (max-width: 950px) {
@@ -1691,8 +1694,8 @@ a.resume-btn:active {
 /* ======= CONTACT ======= */
 
 #contact {
-    padding-top: 50px;
-    padding-bottom: 70px;
+    padding-top: 29px;
+    padding-bottom: 40px;
     background-color: #F0F0F0;
 }
 
@@ -1843,6 +1846,11 @@ ul.social-buttons li a:active {
 #github:hover {
     background-color: #fff;
     color: #000;
+}
+
+#youtube:hover {
+    background-color: #FFFFFF; /* Hover background color */
+    color: #FF0000; /* Hover text color */
 }
 
 
