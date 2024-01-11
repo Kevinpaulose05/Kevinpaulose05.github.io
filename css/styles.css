@@ -1935,6 +1935,13 @@ ul.social-buttons li a:active {
 .modal-title {
     text-align: center;
     font-weight: 400;
+    a {
+        text-decoration: none; /* Remove underline by default */
+    }
+
+    a:hover {
+        text-decoration: none; /* Remove underline on hover as well */
+    }
 }
 
 .modal-title-description {
@@ -1989,10 +1996,6 @@ ul.social-buttons li a:active {
 .modal-description {
     font-size: 15px;
     margin: 0px 25px;
-}
-
-.modal-description li {
-    font-family: 'Roboto Slab', serif;
 }
 
 @media (max-width: 340px) {

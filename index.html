@@ -69,7 +69,7 @@
                         <img src="img/output-onlinepngtools.png" height="32" width="50" />Kevin Paulose</a>
                 </div>
                 <div class="collapse navbar-collapse navbar-main-collapse">
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav navbar-right navbar-right">
                         <li class="hidden">
                             <a class="page-scroll" href="#page-top"></a>
                         </li>
@@ -389,6 +389,18 @@
                 </div>
             </div>
             <div class="portfolio-item-wrapper">
+                <div class="portfolio-item" data-toggle="modal" href="#nerf">
+                    <div class="portfolio-overlay"></div>
+                    <div class="links">
+                        <a class="image-link"><i class="fa fa-search-plus"></i></a>
+                    </div>
+                    <img src="img/portfolio/nerf/nerfpipeline.png" alt="image">
+                    <div class="portfolio-info">
+                        <h3>NeRF- Neural Radiance Field 3D Reconstruction</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
                 <div class="portfolio-item" data-toggle="modal" href="#drone">
                     <div class="portfolio-overlay"></div>
                     <div class="links">
@@ -471,7 +483,9 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">Grand Theft Autonomous 2023</h4>
+                    <h4 class="modal-title">Grand Theft Autonomous 2023 <a
+                            href="https://github.com/Kevinpaulose05/Grand-Theft-Autonomous-2023" target="_blank">🔗</a>
+                    </h4>
                     <h6 class="modal-title-description">MEAM 5100 Course Final Project- Mobile Robot Competition</h6>
                 </div>
                 <div class="modal-body">
@@ -508,10 +522,10 @@
                     </p>
                     <br>
 
-                    <p class=" modal-description li">
-                    The brains of the robot is the ESP32 S2 microcontroller, which works as the access point
-                    facilitating real-time data processing crucial for managing interactions and executing tasks.
-                    The robot employs three crucial circuits:
+                    <p class="modal-description li">
+                        The brains of the robot is the ESP32 S2 microcontroller, which works as the access point
+                        facilitating real-time data processing crucial for managing interactions and executing tasks.
+                        The robot employs three crucial circuits:
                     <ul>
                         <li>frequency detection circuit which uses LTR-4208 phototransistors to detect IR LEDs (beacon),
                             signals processed using ATMega32u4</li>
@@ -521,11 +535,11 @@
                     </ul>
                     </p>
                     <p class="modal-description">
-                    The software architecture plays a pivotal role in the robot's functionality, incorporating a
-                    real-time operating system (RTOS) to efficiently handle concurrent tasks, ensuring seamless and
-                    responsive operation. The system employs interrupt handling for immediate response to sensor
-                    inputs, I2C communication for streamlined data transfer between sensors and the microcontroller,
-                    and UDP, ESP-NOW protocols for robust network communication.
+                        The software architecture plays a pivotal role in the robot's functionality, incorporating a
+                        real-time operating system (RTOS) to efficiently handle concurrent tasks, ensuring seamless and
+                        responsive operation. The system employs interrupt handling for immediate response to sensor
+                        inputs, I2C communication for streamlined data transfer between sensors and the microcontroller,
+                        and UDP, ESP-NOW protocols for robust network communication.
                     </p>
                     <br>
                     <p class="modal-description"><strong>Note:</strong> For an optimal experience, use browsers on
@@ -536,13 +550,15 @@
             </div>
         </div>
     </div>
-    
-    <div class="modal fade" id="pickandplace" tabindex="-1" role="dialog" aria-labelledby="fontipsumsModal" aria-hidden="true">
+
+    <div class="modal fade" id="pickandplace" tabindex="-1" role="dialog" aria-labelledby="fontipsumsModal"
+        aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">Pick and Place Competition</h4>
+                    <h4 class="modal-title">Pick and Place Competition <a
+                            href="https://github.com/Kevinpaulose05/pick-and-place-meam520" target="_blank">🔗</a></h4>
                     <h6 class="modal-title-description">MEAM 5200 Course Final Project</h6>
                 </div>
                 <div class="modal-body">
@@ -571,42 +587,108 @@
                         </div>
                     </div>
                     <p class="modal-description">
-                        Presenting an innovative autonomous 4-wheeled mobile robot that seamlessly integrates mechanical
-                        design, electronic engineering, and sophisticated embedded software. This robot is primarily
-                        capabable of precise wall following, beacon tracking, and pushing a model police car (a heavy
-                        target placed randomly on the track). The fundamental distinguishing component used are the
-                        mecanum wheels which provides omnidirectional motion to the robot!
-                    </p>
-                    <br>
+                        This project tasks a 7-DOF Franka Emika Panda arm to pick static blocks and dynamic blocks and
+                        place them in a stack at the target platform. The key task here is strategizing the best motion
+                        planning algorithm. As for the competition stacking the blocks in a particular way is critical
+                        which requires adept handling of both static and dynamic blocks. Accurate detection of the
+                        blocks using the camera (at end-effector) and manipulating the end-effector were the pivotal
+                        tasks. The final algorithm developed here seamlessly integrates Geometric Inverse Kinematics and
+                        a bi-directional Rapidly-exploring Random Tree (RRT), ensuring precise and efficient control
+                        over the robotic manipulator.
 
-                    <p class=" modal-description li">
-                    The brains of the robot is the ESP32 S2 microcontroller, which works as the access point
-                    facilitating real-time data processing crucial for managing interactions and executing tasks.
-                    The robot employs three crucial circuits:
-                    <ul>
-                        <li>frequency detection circuit which uses LTR-4208 phototransistors to detect IR LEDs (beacon),
-                            signals processed using ATMega32u4</li>
-                        <li>HTC Vive circuit which uses PD-70 photodiode to read and transmit robot's position, used for
-                            robot localisation PID algorithm</li>
-                        <li>ultrasonic sensors and motor drivers (TB6612FNG) circuits used to drive the robot</li>
-                    </ul>
-                    </p>
-                    <p class="modal-description">
-                    The software architecture plays a pivotal role in the robot's functionality, incorporating a
-                    real-time operating system (RTOS) to efficiently handle concurrent tasks, ensuring seamless and
-                    responsive operation. The system employs interrupt handling for immediate response to sensor
-                    inputs, I2C communication for streamlined data transfer between sensors and the microcontroller,
-                    and UDP, ESP-NOW protocols for robust network communication.
+                        <br><br>
+
+                        A notable milestone is the successful development of an analytical Inverse Kinematics (IK)
+                        solution,
+                        significantly enhancing the speed and efficiency of the robotic manipulator compared to
+                        traditional IK solutions by bypassing iterative steps- an imperative factor for real-time
+                        applications. The project also serves as a testament to practical problem-solving skills and
+                        adaptability, especially in a competitive environment.
                     </p>
                     <br>
                     <p class="modal-description"><strong>Note:</strong> For an optimal experience, use browsers on
                         laptop/PC</p>
-                    <p class="visit"><a href="https://github.com/Kevinpaulose05/Grand-Theft-Autonomous-2023"
-                            target="_blank" id="visit-btn">View on GitHub</a>
+                    <p class="visit"><a href="https://github.com/Kevinpaulose05/pick-and-place-meam520" target="_blank"
+                            id="visit-btn">View on GitHub</a>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="nerf" tabindex="-1" role="dialog" aria-labelledby="fontipsumsModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">NeRF- Neural Radiance Field 3D Reconstruction <a
+                            href="https://github.com/Kevinpaulose05/NeRFs" target="_blank">🔗</a></h4>
+                    <h6 class="modal-title-description">Novel 3D reconstruction using NeRFs</h6>
+                </div>
+                <div class="modal-body">
+                    <!-- <p>
+                        <img class="img-responsive img-centered" src="img/portfolio/drone.jpg" alt="">
+                    </p>               -->
+                    <div class="portfolio-details">
+                        <div class="portfolio-details-slider swiper">
+                            <div class="swiper-wrapper align-items-center">
+                                <div class="swiper-slide">
+                                    <img src="/img/portfolio/nerf/output.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/img/portfolio/nerf/mlp.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/img/portfolio/nerf/imageray.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/img/portfolio/nerf/volumetric.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/img/portfolio/nerf/psnr.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <p class="modal-description">
+                        The Neural Radiance Field (NeRF) uses a multilayer perceptron (MLP) to learn a compact implicit
+                        neural representation of a static 3D scene from multiple input views. It maps 3D coordinates and
+                        view directions to color and density values. By neural volumetric rendering of many sampled
+                        points along camera rays, it can reconstruct input views and also render novel views of the
+                        scene. This project involves fitting 2D and 3D scenes using neural networks.
+                    </p>
+                    <br>
+
+                    <p class="modal-description li">
+                        2D Image Fitting:
+                    <ul>
+                        <li>An MLP is trained to map 2D pixel coordinates to RGB values to fit a given image. Positional
+                            encoding is used to map inputs to a higher dimension. The MLP has linear layers with ReLU
+                            activations except the last sigmoid layer.</li>
+                        <li>The model is trained to reconstruct the image. Positional encoding helps achieve higher reconstruction quality.</li>
+                    </ul>
+                    </p>
+                    <p class="modal-description li">
+                        3D Scene Fitting:
+                    <ul>
+                        <li>An MLP takes 3D coordinates and view directions as input and predicts color and density values to represent a 3D scene.</li>
+                        <li>Rays are cast through pixels of input view images. Points sampled along each ray are fed to the MLP.</li>
+                        <li>Volumetric rendering of the MLP outputs allows reconstructing input views and rendering of novel views.</li>
+                        <li>The model is trained end-to-end on input views to get a compact scene representation for view synthesis.</li>
+                    </ul>
+                    </p>
+                    <br>
+                    <p class="modal-description"><strong>Note:</strong> For an optimal experience, use browsers on
+                        laptop/PC</p>
+                    <p class="visit"><a href="https://github.com/Kevinpaulose05/NeRFs" target="_blank"
+                            id="visit-btn">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="modal fade" id="drone" tabindex="-1" role="dialog" aria-labelledby="fontipsumsModal" aria-hidden="true">
         <div class="modal-dialog">
@@ -625,12 +707,6 @@
                             <div class="swiper-wrapper align-items-center">
                                 <div class="swiper-slide">
                                     <img src="/img/portfolio/drone.jpg" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="/img/portfolio/adaptive.png" alt="">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="/img/portfolio/adaptive.png" alt="">
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
@@ -866,7 +942,7 @@
                     <div class="copyright">
                         <p><i class="fa fa-copyright"></i> Kevin Paulose 2023</p>
                         <p>Hosted by <a href src="https://pages.github.com/" style="color: rgb(94, 159, 211);">GitHub
-                                Pages</a>. Last updated: January 10, 2024</p>
+                                Pages</a>. Last updated: January 11, 2024</p>
                     </div>
                 </div>
             </div>
