@@ -10,10 +10,10 @@ $(function() {
 	new Swiper('.portfolio-details-slider', {
 		speed: 400,
 		loop: true,
-		autoplay: {
-		  delay: 5000,
-		  disableOnInteraction: false
-		},
+		// autoplay: {
+		//   delay: 4000,
+		//   disableOnInteraction: true
+		// },
 		pagination: {
 		  el: '.swiper-pagination',
 		  type: 'bullets',
@@ -30,7 +30,7 @@ $(function() {
 			el: '.swiper-scrollbar',
 		  },
 	  });
-
+	
 	/* Features */
 	$('.wp2').waypoint(function() {
 		$('.wp2').addClass('animated fadeIn');

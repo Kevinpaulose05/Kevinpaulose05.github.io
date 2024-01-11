@@ -401,6 +401,18 @@
                 </div>
             </div>
             <div class="portfolio-item-wrapper">
+                <div class="portfolio-item" data-toggle="modal" href="#ransac">
+                    <div class="portfolio-overlay"></div>
+                    <div class="links">
+                        <a class="image-link"><i class="fa fa-search-plus"></i></a>
+                    </div>
+                    <img src="img/portfolio/ransac/ransac.png" alt="image">
+                    <div class="portfolio-info">
+                        <h3>3D Reconstruction from two 2D images using RANSAC</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
                 <div class="portfolio-item" data-toggle="modal" href="#drone">
                     <div class="portfolio-overlay"></div>
                     <div class="links">
@@ -667,16 +679,21 @@
                         <li>An MLP is trained to map 2D pixel coordinates to RGB values to fit a given image. Positional
                             encoding is used to map inputs to a higher dimension. The MLP has linear layers with ReLU
                             activations except the last sigmoid layer.</li>
-                        <li>The model is trained to reconstruct the image. Positional encoding helps achieve higher reconstruction quality.</li>
+                        <li>The model is trained to reconstruct the image. Positional encoding helps achieve higher
+                            reconstruction quality.</li>
                     </ul>
                     </p>
                     <p class="modal-description li">
                         3D Scene Fitting:
                     <ul>
-                        <li>An MLP takes 3D coordinates and view directions as input and predicts color and density values to represent a 3D scene.</li>
-                        <li>Rays are cast through pixels of input view images. Points sampled along each ray are fed to the MLP.</li>
-                        <li>Volumetric rendering of the MLP outputs allows reconstructing input views and rendering of novel views.</li>
-                        <li>The model is trained end-to-end on input views to get a compact scene representation for view synthesis.</li>
+                        <li>An MLP takes 3D coordinates and view directions as input and predicts color and density
+                            values to represent a 3D scene.</li>
+                        <li>Rays are cast through pixels of input view images. Points sampled along each ray are fed to
+                            the MLP.</li>
+                        <li>Volumetric rendering of the MLP outputs allows reconstructing input views and rendering of
+                            novel views.</li>
+                        <li>The model is trained end-to-end on input views to get a compact scene representation for
+                            view synthesis.</li>
                     </ul>
                     </p>
                     <br>
@@ -689,6 +706,67 @@
         </div>
     </div>
 
+
+    <div class="modal fade" id="ransac" tabindex="-1" role="dialog" aria-labelledby="fontipsumsModal"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">3D RECONSTRUCTION FROM TWO 2D IMAGES<a
+                            href="https://github.com/Kevinpaulose05/RANSAC" target="_blank">🔗</a></h4>
+                    <h6 class="modal-title-description">Multiview image reconstruction using RANSAC</h6>
+                </div>
+                <div class="modal-body">
+                    <!-- <p>
+                        <img class="img-responsive img-centered" src="img/portfolio/drone.jpg" alt="">
+                    </p>               -->
+                    <div class="portfolio-details">
+                        <div class="portfolio-details-slider swiper">
+                            <div class="swiper-wrapper align-items-center">
+                                <div class="swiper-slide">
+                                    <img src="/img/portfolio/ransac/sift.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/img/portfolio/ransac/allmatches.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/img/portfolio/ransac/ransacinliers.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/img/portfolio/ransac/triangulation.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/img/portfolio/ransac/output.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <p class="modal-description">
+                        This project immerses in computer vision, focusing on essential matrix estimation, relative pose
+                        disambiguation, triangulation, and reprojection error analysis for multiview 3D reconstruction.
+                    </p>
+                    <br>
+
+                    <p class="modal-description li">
+                        Estimating the essential matrix (E) involves capturing epipolar constraints between matching
+                        points. Refined through least squares and RANSAC, E unlocks the relative camera pose.
+                        Triangulation reconstructs 3D structures, resolving pose ambiguity with SVD. Evaluation based on
+                        point positioning enables recovery of relative rotation (R) and translation (T). Reprojection
+                        errors provide critical insights into the accuracy of reconstructed 3D points.
+                    </p>
+                    <br>
+                    <p class="modal-description"><strong>Note:</strong> For an optimal experience, use browsers on
+                        laptop/PC</p>
+                    <p class="visit"><a href="https://github.com/Kevinpaulose05/RANSAC" target="_blank"
+                            id="visit-btn">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="modal fade" id="drone" tabindex="-1" role="dialog" aria-labelledby="fontipsumsModal" aria-hidden="true">
         <div class="modal-dialog">
