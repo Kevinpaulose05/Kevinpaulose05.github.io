@@ -413,6 +413,18 @@
                 </div>
             </div>
             <div class="portfolio-item-wrapper">
+                <div class="portfolio-item" data-toggle="modal" href="#sfm">
+                    <div class="portfolio-overlay"></div>
+                    <div class="links">
+                        <a class="image-link"><i class="fa fa-search-plus"></i></a>
+                    </div>
+                    <img src="img/portfolio/sfm/sfm.png" alt="image">
+                    <div class="portfolio-info">
+                        <h3>Optical Flow and Structure from Motion (SfM)</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
                 <div class="portfolio-item" data-toggle="modal" href="#drone">
                     <div class="portfolio-overlay"></div>
                     <div class="links">
@@ -762,6 +774,70 @@
                     <p class="modal-description"><strong>Note:</strong> For an optimal experience, use browsers on
                         laptop/PC</p>
                     <p class="visit"><a href="https://github.com/Kevinpaulose05/RANSAC" target="_blank"
+                            id="visit-btn">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sfm" tabindex="-1" role="dialog" aria-labelledby="fontipsumsModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Optical Flow and Structure from Motion<a
+                            href="https://github.com/Kevinpaulose05/optical-flow" target="_blank">🔗</a></h4>
+                    <h6 class="modal-title-description">Dynamic Scene Analysis through Optical Flow and Structure from
+                        Motion</h6>
+                </div>
+                <div class="modal-body">
+                    <!-- <p>
+                        <img class="img-responsive img-centered" src="img/portfolio/drone.jpg" alt="">
+                    </p>               -->
+                    <div class="portfolio-details">
+                        <div class="portfolio-details-slider swiper">
+                            <div class="swiper-wrapper align-items-center">
+                                <div class="swiper-slide">
+                                    <img src="/img/portfolio/sfm/opticalflow50.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/img/portfolio/sfm/epipole50.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/img/portfolio/sfm/depth2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <p class="modal-description">
+                        This project delves into dynamic scene analysis by computing optical flow between images in a
+                        sequence, utilizing spatiotemporal image derivatives and a local constant flow assumption. The
+                        computation involves Gaussian derivative filters to obtain image derivatives along x, y, and t,
+                        subsequently solving a local 25x2 linear system to derive the 2D flow vector (u,v). Visualizing
+                        the flow as a vector field facilitates the computation of the episode of the dominant motion
+                        using the epipolar constraint.
+                    </p>
+                    <br>
+
+                    <p class="modal-description li">
+                        With the optical flow and epipole known, the motion is further dissected into rotation and
+                        translation components. By rearranging the projection equation, depth values are calculated at
+                        each pixel, creating a depth map visualization through the structure from motion.
+                    </p>
+                    <br>
+                    <p class="modal-description li">
+                        The key learning outcomes include hands-on experience with optical flow computation, utilizing
+                        epipolar geometry for scene structure reasoning, and recovering depth from camera motion. In
+                        essence, this homework provides practical skills applicable to video analysis, 3D
+                        reconstruction, robotics, and autonomous vehicles.
+                    </p>
+                    <br>
+                    <p class="modal-description"><strong>Note:</strong> For an optimal experience, use browsers on
+                        laptop/PC</p>
+                    <p class="visit"><a href="https://github.com/Kevinpaulose05/optical-flow" target="_blank"
                             id="visit-btn">View on GitHub</a>
                 </div>
             </div>
