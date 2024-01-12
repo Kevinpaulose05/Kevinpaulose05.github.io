@@ -44,11 +44,11 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7MVX7FGGL2"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'G-7MVX7FGGL2');
+        gtag('config', 'G-7MVX7FGGL2');
     </script>
 </head>
 
@@ -84,10 +84,10 @@
                             <a class="page-scroll" href="#page-top"></a>
                         </li>
                         <li><a class="page-scroll" href="#about">About</a></li>
-                        <li><a class="page-scroll" href="#services">Passion</a></li>
                         <li><a class="page-scroll" href="#experience">Experience</a></li>
                         <li><a class="page-scroll" href="#resume">Résumé</a></li>
                         <li><a class="page-scroll" href="#portfolio">Projects</a></li>
+                        <li><a class="page-scroll" href="#services">Passion</a></li>
                         <li><a class="page-scroll" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -157,43 +157,6 @@
                                 <div class="tldr-icon"><i class="fas fa-swimmer"></i></div>
                                 <h5>Swimmer</h5>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- /Section: About -->
-        <!-- Section: Services (Passions) -->
-        <section id="services" class="text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2>Attention, Acquisition, and Ascension a.k.a. What I Do 😁</h2>
-                        <div class="spacer-10"></div>
-                        <div class="col-md-4 wp2">
-                            <div class="icon"><i class="fa fa-laptop"></i></div>
-                            <h3>Learning</h3>
-                            <p>From rookie to intermediate, I have had a journey. I keep learning new technologies to
-                                master an aptitude in mechanical
-                                engineering, control systems, mechanics and robotics with an ability to write robust
-                                code and develop cutting-edge solutions.
-                            </p>
-                        </div>
-                        <div class="col-md-4 wp2 delay-025s">
-                            <div class="icon"><i class="fa fa-code"></i></div>
-                            <h3>Development</h3>
-                            <p>With passionate interest in the robotics and aerospace industries I wish too master the
-                                ground work needed them. As I grow as
-                                a engineer, I hope to develop novel ideas and implement them and also share it among
-                                others.</p>
-                        </div>
-                        <div class="col-md-4 wp2 delay-05s">
-                            <div class="icon"><i class="fas fa-jedi"></i></div>
-                            <h3>My other half</h3>
-                            <p>I have varied non-technical activities a.k.a. hobbies that I love to do. Check out a
-                                small collage of <a href='img/experience/collage.jpg'>ME</a>. For starters swimming,
-                                novels, music are
-                                just some of it.</p>
                         </div>
                     </div>
                 </div>
@@ -392,7 +355,7 @@
                     <div class="links">
                         <a class="image-link"><i class="fa fa-search-plus"></i></a>
                     </div>
-                    <img src="img/portfolio/pickplace/pickandplace.png" alt="image">
+                    <img src="img/portfolio/pickplace/coverphoto.gif" alt="image">
                     <div class="portfolio-info">
                         <h3>Pick and Place Competition</h3>
                     </div>
@@ -431,6 +394,18 @@
                     <img src="img/portfolio/sfm/sfm.png" alt="image">
                     <div class="portfolio-info">
                         <h3>Optical Flow and Structure from Motion (SfM)</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-item" data-toggle="modal" href="#ar">
+                    <div class="portfolio-overlay"></div>
+                    <div class="links">
+                        <a class="image-link"><i class="fa fa-search-plus"></i></a>
+                    </div>
+                    <img src="img/portfolio/apriltags/ar.gif" alt="image">
+                    <div class="portfolio-info">
+                        <h3>Augmented Reality using April Tags</h3>
                     </div>
                 </div>
             </div>
@@ -854,6 +829,72 @@
         </div>
     </div>
 
+    <div class="modal fade" id="ar" tabindex="-1" role="dialog" aria-labelledby="fontipsumsModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">AUGMENTED REALITY USING APRIL TAGS<a
+                            href="https://github.com/Kevinpaulose05/Augmented-Reality-with-April-Tags"
+                            target="_blank">🔗</a></h4>
+                    <h6 class="modal-title-description">Camera pose estimation solved using PnP algorithm and Procrustes
+                        problem analysis</h6>
+                </div>
+                <div class="modal-body">
+                    <!-- <p>
+                        <img class="img-responsive img-centered" src="img/portfolio/drone.jpg" alt="">
+                    </p>               -->
+                    <div class="portfolio-details">
+                        <div class="portfolio-details-slider swiper">
+                            <div class="swiper-wrapper align-items-center">
+                                <div class="swiper-slide">
+                                    <img src="/img/portfolio/apriltags/world.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/img/portfolio/apriltags/p3p.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/img/portfolio/apriltags/pose.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/img/portfolio/apriltags/procrustes.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <p class="modal-description">
+                        This project focuses on building an augmented reality application using AprilTags for camera
+                        pose estimation, reinforcing concepts of homographies and coplanar constraints. The key task is
+                        to leverage the AprilTag fiducials to estimate the camera pose in different ways.
+                    </p>
+                    <br>
+
+                    <p class="modal-description li">
+                        First, a world coordinate system centered on the tag is established and pose is estimated using
+                        the Perspective-N-Point (PnP) algorithm. Next, the Perspective-Three Point (P3P) algorithm
+                        combined with Procrustes analysis provides an alternative pose estimation approach. Converting
+                        2D pixel picks to 3D world coordinates also highlights the interplay between camera calibration
+                        and geometry.
+                    </p>
+                    <br>
+                    <p class="modal-description li">
+                        By putting together these building blocks, geometric CV principles like camera projection
+                        models, pose estimation, and augmenting real scenes with virtual objects was implemented, giving
+                        a firm understanding of concepts needed for mixed reality applications.
+                    </p>
+                    <br>
+                    <p class="modal-description"><strong>Note:</strong> For an optimal experience, use browsers on
+                        laptop/PC</p>
+                    <p class="visit"><a href="https://github.com/Kevinpaulose05/Augmented-Reality-with-April-Tags"
+                            target="_blank" id="visit-btn">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="modal fade" id="drone" tabindex="-1" role="dialog" aria-labelledby="fontipsumsModal" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -1046,6 +1087,44 @@
         </div>
     </div>
 
+    <!-- /Section: About -->
+    <!-- Section: Services (Passions) -->
+    <section id="services" class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Attention, Acquisition, and Ascension a.k.a. What I Do 😁</h2>
+                    <div class="spacer-10"></div>
+                    <div class="col-md-4 wp2">
+                        <div class="icon"><i class="fa fa-laptop"></i></div>
+                        <h3>Learning</h3>
+                        <p>From rookie to intermediate, I have had a journey. I keep learning new technologies to
+                            master an aptitude in mechanical
+                            engineering, control systems, mechanics and robotics with an ability to write robust
+                            code and develop cutting-edge solutions.
+                        </p>
+                    </div>
+                    <div class="col-md-4 wp2 delay-025s">
+                        <div class="icon"><i class="fa fa-code"></i></div>
+                        <h3>Development</h3>
+                        <p>With passionate interest in the robotics and aerospace industries I wish too master the
+                            ground work needed them. As I grow as
+                            a engineer, I hope to develop novel ideas and implement them and also share it among
+                            others.</p>
+                    </div>
+                    <div class="col-md-4 wp2 delay-05s">
+                        <div class="icon"><i class="fas fa-jedi"></i></div>
+                        <h3>My other half</h3>
+                        <p>I have varied non-technical activities a.k.a. hobbies that I love to do. Check out a
+                            small collage of <a href='img/experience/collage.jpg'>ME</a>. For starters swimming,
+                            novels, music are
+                            just some of it.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Section: Contact -->
     <section id="contact">
         <div class="container">
@@ -1106,7 +1185,7 @@
                     <div class="copyright">
                         <p><i class="fa fa-copyright"></i> Kevin Paulose 2023</p>
                         <p>Hosted by <a href src="https://pages.github.com/" style="color: rgb(94, 159, 211);">GitHub
-                                Pages</a>. Last updated: January 11, 2024</p>
+                                Pages</a>. Last updated: January 12, 2024</p>
                     </div>
                 </div>
             </div>

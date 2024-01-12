@@ -764,7 +764,7 @@ a.fa.fa-angle-down:focus {
 #services {
     padding-top: 70px;
     padding-bottom: 70px;
-    background-color: #F0F0F0;
+    background-color: #f0f0f0;
 }
 
 #services h3 {
@@ -1704,7 +1704,7 @@ a.resume-btn:active {
 #contact {
     padding-top: 29px;
     padding-bottom: 40px;
-    background-color: #F0F0F0;
+    background-color: #FFF;
 }
 
 .email-icon {
