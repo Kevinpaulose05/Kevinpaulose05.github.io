@@ -1334,7 +1334,7 @@ img#nu-logo {
     /* W3C */
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#cc000000', endColorstr='#66000000', GradientType=0);
     /* IE6-9 */
-    padding: 0;
+    padding: 80px 0;
     background-attachment: fixed;
 }
 
