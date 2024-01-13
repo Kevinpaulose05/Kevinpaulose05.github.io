@@ -410,6 +410,18 @@
                 </div>
             </div>
             <div class="portfolio-item-wrapper">
+                <div class="portfolio-item" data-toggle="modal" href="#billboard">
+                    <div class="portfolio-overlay"></div>
+                    <div class="links">
+                        <a class="image-link"><i class="fa fa-search-plus"></i></a>
+                    </div>
+                    <img src="img/portfolio/billboard/billboard.png" alt="image">
+                    <div class="portfolio-info">
+                        <h3>Virtual Billboard Projection</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item-wrapper">
                 <div class="portfolio-item" data-toggle="modal" href="#drone">
                     <div class="portfolio-overlay"></div>
                     <div class="links">
@@ -445,7 +457,7 @@
                     </div>
                 </div>
             </div>
-            <div class="portfolio-item-wrapper">
+            <!-- <div class="portfolio-item-wrapper">
                 <div class="portfolio-item" data-toggle="modal" href="#exo">
                     <div class="portfolio-overlay"></div>
                     <div class="links">
@@ -456,7 +468,7 @@
                         <h3>LOWER LIMB EXOSKELETON</h3>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="portfolio-item-wrapper">
                 <div class="portfolio-item" data-toggle="modal" href="#chatapp">
                     <div class="portfolio-overlay"></div>
@@ -895,6 +907,63 @@
         </div>
     </div>
 
+    <div class="modal fade" id="billboard" tabindex="-1" role="dialog" aria-labelledby="fontipsumsModal"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Virtual Billboard Projection<a
+                            href="https://github.com/Kevinpaulose05/Virtual-billboard-projection" target="_blank">🔗</a>
+                    </h4>
+                    <h6 class="modal-title-description">Camera pose estimation solved using PnP algorithm and Procrustes
+                        problem analysis</h6>
+                </div>
+                <div class="modal-body">
+                    <!-- <p>
+                        <img class="img-responsive img-centered" src="img/portfolio/drone.jpg" alt="">
+                    </p>               -->
+                    <div class="portfolio-details">
+                        <div class="portfolio-details-slider swiper">
+                            <div class="swiper-wrapper align-items-center">
+                                <div class="swiper-slide">
+                                    <img src="/img/portfolio/billboard/pennlogo.gif" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/img/portfolio/billboard/homography.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/img/portfolio/billboard/colbert.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <p class="modal-description">
+                        Frames of a soccer video is augmented by projecting a logo onto the goal area in each frame. The
+                        homography between points on the goal and logo are estimated using the Direct Linear Transform
+                        (DLT) algorithm, and to warp the goal points onto the logo plane. The warped correspondence is
+                        then used to copy logo pixels into the video frame.
+                    </p>
+                    <br>
+
+                    <p class="modal-description li">
+                        Key concepts include interpreting homographies as transformations between 3D world and 2D image
+                        spaces and using four point matches to set up and solve equations for the inter-image homography
+                        matrix. Inverse warping avoids overlapping projections and holes.
+                    </p>
+                    <br>
+                    <p class="modal-description"><strong>Note:</strong> For an optimal experience, use browsers on
+                        laptop/PC</p>
+                    <p class="visit"><a href="https://github.com/Kevinpaulose05/Virtual-billboard-projection"
+                            target="_blank" id="visit-btn">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="modal fade" id="drone" tabindex="-1" role="dialog" aria-labelledby="fontipsumsModal" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -974,14 +1043,18 @@
                 </div>
                 <div class="modal-body">
                     <p>
-                        <img class="img-responsive img-centered" src="img/portfolio/steering.png" alt="">
+                        <img class="img-responsive img-centered" src="img/portfolio/steering.gif" alt="">
                     </p>
-                    <p class="modal-description">- Developed a working model of the steering mechanism used in SAE
+                    <p class="modal-description">Developed a working model of the steering mechanism used in SAE
                         BAJA's buggy as per given
                         dimensional regulations using SolidWorks. This model was crucial in determining the material
                         needed and for further
-                        CAE analysis in Ansys. <br>
-                        - Further models of roll cages were developed by adding some members and trusses in Solidworks.
+                        CAE analysis in Ansys.     
+                    </p>
+                    <br>
+
+                        <p class="modal-description">
+                        Further models of roll cages were developed by adding some members and trusses in Solidworks.
                         ANSYS was used to create
                         a finite element formulation of the problem for both static structural and dynamic analysis.
                         Then maximum
@@ -989,14 +1062,14 @@
                     <Br>
                     <p class="modal-description"><strong>Note:</strong> For an optimal experience, use browsers on
                         laptop/PC</p>
-                    <p class="visit"><a href="https://drive.google.com/file/d/1eanlmF0MLW8MIGiHv9a2QiuNkcgUaknQ/view"
-                            target="_blank" id="visit-btn">View simulation</a>
+                    <!-- <p class="visit"><a href="https://drive.google.com/file/d/1eanlmF0MLW8MIGiHv9a2QiuNkcgUaknQ/view"
+                            target="_blank" id="visit-btn">View simulation</a> -->
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="modal fade" id="exo" tabindex="-1" role="dialog" aria-labelledby="fontipsumsModal" aria-hidden="true">
+    <!-- <div class="modal fade" id="exo" tabindex="-1" role="dialog" aria-labelledby="fontipsumsModal" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -1023,12 +1096,12 @@
                         power for movement. The critical hardware arrangement aspects and control system to be decided.
                     </p>
                     <br>
-                    <!-- <p class="modal-description"><strong>Note:</strong> For an optimal experience, use browsers on laptop/PC</p>
-                        <p class="visit"><a href="https://drive.google.com/file/d/1eanlmF0MLW8MIGiHv9a2QiuNkcgUaknQ/view" target="_blank" id="visit-btn">View simulation</a> -->
+                    <p class="modal-description"><strong>Note:</strong> For an optimal experience, use browsers on laptop/PC</p>
+                        <p class="visit"><a href="https://drive.google.com/file/d/1eanlmF0MLW8MIGiHv9a2QiuNkcgUaknQ/view" target="_blank" id="visit-btn">View simulation</a>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="modal fade" id="chatapp" tabindex="-1" role="dialog" aria-labelledby="fontipsumsModal"
         aria-hidden="true">
@@ -1043,17 +1116,24 @@
                     <p>
                         <img class="img-responsive img-centered" src="img/portfolio/chatapp.png" alt="">
                     </p>
-                    <p class="modal-description">- Developed a full - stack application with features similar to the
+                    <p class="modal-description">Developed a full - stack application with features similar to the
                         Slack app built using React, Redux, and Firebase. The
                         app has basic authentication,proper chatting channels, image upload in chat features, emojis,
-                        and much more. <br>
-                        - It is a live application hosted using Firebase. Sample user entry- Email: 123@gmail.com,
+                        and much more. 
+                        
+                        <br>
+                        </p>
+
+                    <p class="modal-description"> 
+                    It is a live application hosted using Firebase. Sample user entry- Email: 123@gmail.com,
                         password: 123456 , else register for a new user</p>
                     <Br>
                     <p class="modal-description"><strong>Note:</strong> For an optimal experience, use browsers on
                         laptop/PC</p>
                     <p class="visit"><a href="https://react-slack-clone-63f76.web.app/" target="_blank"
-                            id="visit-btn">Visit app</a>
+                            id="visit-btn">Visit site</a> or <a
+                            href="https://github.com/Kevinpaulose05/Chat-app-slack-like" target="_blank"
+                            id="visit-btn">View Source</a></p>
                 </div>
             </div>
         </div>
