@@ -1338,20 +1338,6 @@ img#nu-logo {
     background-attachment: fixed;
 }
 
-@media only screen and (max-width: 1024px) {
-    /* Styles for iPad Pro */
-    #resume .overlay {
-        background-attachment: scroll; /* Adjust attachment for iPad Pro */
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    /* Styles for iPhone */
-    #resume .overlay {
-        padding: 40px 0; /* Adjust padding for iPhone */
-    }
-}
-
 #resume h2 {
     color: #fff;
 }
