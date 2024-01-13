@@ -1313,7 +1313,7 @@ img#nu-logo {
     background: url(../img/lappy.png);
     background-size: cover;
     background-position: center;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-color: #fff;
     color: #fff;
@@ -1335,7 +1335,7 @@ img#nu-logo {
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#cc000000', endColorstr='#66000000', GradientType=0);
     /* IE6-9 */
     padding: 80px 0;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 
 #resume h2 {
