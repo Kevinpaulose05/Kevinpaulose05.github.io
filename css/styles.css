@@ -243,7 +243,7 @@ ul {
     margin: 5px 0 0 35px;
     font-size: 15px;
     line-height: 1.6;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'lato', sans-serif;
     font-weight: 300;
 }
 
@@ -347,7 +347,7 @@ a.active {
 }
 
 .nav>li {
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .navbar {
@@ -598,7 +598,7 @@ a.fa.fa-angle-down:focus {
     width: 200px;
     height: 200px;
     object-fit: cover;
-    object-position: 10% 10%;
+    object-position: 10% 30%;
 }
 
 #about p {
@@ -2063,7 +2063,7 @@ body {
 # Portfolio Details
 --------------------------------------------------------------*/
 .portfolio-details {
-    padding-top: 40px;
+    padding-top: 10px;
 }
 
 /* .portfolio-details .portfolio-details-slider {
