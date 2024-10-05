@@ -136,3 +136,34 @@ document.addEventListener('DOMContentLoaded', function () {
         // For simplicity, we are logging the image URL to the console.
     }
 });
+
+$(document).ready(function() {
+    // Initially hide the button
+    $('#chatbot-button').hide();
+
+    // Show button after scrolling down
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) { // Adjust the value as needed
+            $('#chatbot-button').fadeIn();
+        } else {
+            $('#chatbot-button').fadeOut();
+        }
+    });
+
+    // Smooth scroll for page-scroll links
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+
+    // Hover effect for rocket button
+    $("#to-top").mouseover(function() {
+        $("#to-top-copy").animate({opacity: "1"}, "slow");
+    });
+    $("#to-top").mouseout(function() {
+        $("#to-top-copy").animate({opacity: "0"}, "slow");
+    });
+});

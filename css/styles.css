@@ -24,6 +24,61 @@ body {
     font-weight: normal;
 }
 
+/* Beam me up, scotty! */
+#chatbot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.icon-container {
+    background-color: #FF5733; /* Initial contrast color */
+    border-radius: 50%;
+    width: 70px; /* Increased size */
+    height: 70px; /* Increased size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+#to-top {
+    display: block; /* Ensure the anchor is a block element */
+}
+
+#rocket {
+    width: 60px; /* Increased size */
+    height: 55px; /* Increased size */
+}
+
+#to-top-copy {
+    position: absolute;
+    bottom: 90px; /* Position text above the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0; /* Initially hidden */
+    pointer-events: none; /* Ignore mouse events */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+#chatbot-button:hover .icon-container {
+    background-color: #FF4500; /* Darker shade for hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+#chatbot-button:hover #to-top-copy {
+    opacity: 1; /* Show text on hover */
+}
+
+
+
 button:focus,
 .btn:focus {
     outline: 0 !important;
@@ -507,7 +562,15 @@ a.active {
 /* ======= INTRODUCTION ======= */
 
 #intro {
-    height: 900px;
+    height: 850px;
+}
+
+.intro-content {
+    position: relative;
+    padding: 15% 0 15% 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
 }
 
 #intro .overlay {
@@ -527,13 +590,6 @@ a.active {
     color: #ddd;
 }
 
-.intro-content {
-    position: relative;
-    padding: 15% 0 15% 0;
-    left: 0;
-    right: 0;
-    z-index: 0;
-}
 
 @media screen and (max-width: 1000px) {
     .intro-content {
@@ -723,6 +779,7 @@ a.fa.fa-angle-down:focus {
 @media screen and (max-width: 480px) {
     #about img#prof-pic {
         width: 150px;
+        height: 150px;
     }
 
     #about #tl-dr {
@@ -828,6 +885,33 @@ a.fa.fa-angle-down:focus {
 
 /* ======= EXPERIENCE ======= */
 
+
+.responsive-img-ghost {
+    width: 100%;
+    height: 250px;
+    max-width: 450px; /* Adjust max-width as needed for each image */
+}
+
+.responsive-img-autoware {
+    width: 100%;
+    height: auto;
+    max-width: 450px; /* Adjust max-width as needed for each image */
+}
+
+.responsive-img-uqo {
+    padding-top: 30px;
+    width: 100%;
+    height: 150px;
+    max-width: 200px; /* Adjust max-width as needed for each image */
+}
+
+.responsive-img-barc {
+    padding-top: 30px;
+    width: 100%;
+    height: 230px;
+    max-width: 200px; /* Adjust max-width as needed for each image */
+}
+
 .chart {
     margin: auto;
     padding-right: 600px;
@@ -844,8 +928,8 @@ a.fa.fa-angle-down:focus {
 
 #experience p {
     font-size: 16px;
-    padding-bottom: 40px;
-    max-width: 600px;
+    /* padding-bottom: 40px; */
+    max-width: 100%;
     margin: 0px auto;
 }
 
