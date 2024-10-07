@@ -586,6 +586,14 @@ a.active {
     letter-spacing: 3px;
 }
 
+#intro h3 {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 2px; */
+}
+
 #intro p.subtitle {
     color: #ddd;
 }
